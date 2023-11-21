@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body{
+background-image: url(https://cdn.pixabay.com/photo/2017/05/13/16/04/earth-2309897_1280.png);
+background-size: cover;
+overflow: hidden;
+}
+
+img{
+    width: 130px;
+    position: absolute;
+    bottom: -90px;
+    /* animation-name: caminhar; */
+    /* animation-duration: 7s; */
+    /* animation-timing-function: ease; */
+    /* animation-delay: 0.5s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: backwards; */
+    /* animation-play-state: running; */
+    animation: caminhar 4s infinite ;
+
+}
+
+img:hover{
+    animation-play-state: running;
+}
+
+@keyframes caminhar {
+    from{
+         transform: translate(500px, -400px);
+    }
+      to{
+        transform: translate(calc(100vw), -500px);
+
+     }
+     
+    
+}
